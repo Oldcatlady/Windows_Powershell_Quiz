@@ -1,0 +1,410 @@
+[
+{
+  "question": "Welcher PowerShell-Befehl zeigt den aktuellen Arbeitsordner an?",
+  "type": "mc",
+  "options": [
+    "Get-Location",
+    "Set-Location",
+    "Get-ChildItem",
+    "Show-Location"
+  ],
+  "answer": "Get-Location",
+  "explanation": "Get-Location zeigt den aktuellen Pfad der PowerShell an. So erkennt man schnell, in welchem Ordner Befehle und Dateioperationen ausgeführt werden."
+},
+{
+  "question": "Welcher Befehl wechselt in der PowerShell in einen anderen Ordner?",
+  "type": "mc",
+  "options": [
+    "Set-Location",
+    "Get-Location",
+    "Open-Location",
+    "Show-Location"
+  ],
+  "answer": "Set-Location",
+  "explanation": "Set-Location ändert das aktuelle Arbeitsverzeichnis. Die Kurzform cd führt denselben Befehl aus und wird häufig verwendet."
+},
+{
+  "question": "Welche Kurzform wird in PowerShell häufig für Set-Location verwendet?",
+  "type": "mc",
+  "options": [
+    "cd",
+    "ls",
+    "md",
+    "mv"
+  ],
+  "answer": "cd",
+  "explanation": "cd ist die Kurzform von Set-Location. Damit kann man schnell zwischen Ordnern wechseln und im Dateisystem navigieren."
+},
+{
+  "question": "Welcher Befehl zeigt den Inhalt eines Ordners in der PowerShell an?",
+  "type": "mc",
+  "options": [
+    "Get-ChildItem",
+    "Set-ChildItem",
+    "Get-Location",
+    "Open-ChildItem"
+  ],
+  "answer": "Get-ChildItem",
+  "explanation": "Get-ChildItem listet Dateien und Unterordner eines Verzeichnisses auf. Die Kurzform dir wird dafür ebenfalls oft genutzt."
+},
+{
+  "question": "Was bewirkt der Befehl cd .. in der PowerShell?",
+  "type": "mc",
+  "options": [
+    "Wechselt einen Ordner zurück",
+    "Öffnet den letzten Ordner erneut",
+    "Zeigt alle Unterordner an",
+    "Erstellt einen neuen Ordner"
+  ],
+  "answer": "Wechselt einen Ordner zurück",
+  "explanation": "cd .. wechselt in den übergeordneten Ordner. Damit bewegt man sich im Dateisystem eine Ebene nach oben."
+},
+{
+  "question": "Welches Ergebnis liefert Get-ChildItem *.txt?",
+  "type": "mc",
+  "options": [
+    "Nur Dateien mit .txt-Endung",
+    "Alle Dateien im aktuellen Ordner",
+    "Nur versteckte Textdateien",
+    "Alle Unterordner mit Texten"
+  ],
+  "answer": "Nur Dateien mit .txt-Endung",
+  "explanation": "*.txt filtert nach Textdateien. Dadurch zeigt Get-ChildItem nur Dateien an, deren Name auf .txt endet."
+},
+{
+  "question": "Welcher PowerShell-Befehl erstellt einen neuen Ordner im aktuellen Verzeichnis?",
+  "type": "mc",
+  "options": [
+    "mkdir Projekte",
+    "New-Item Projekte",
+    "Copy-Item Projekte",
+    "Move-Item Projekte"
+  ],
+  "answer": "mkdir Projekte",
+  "explanation": "mkdir erstellt ein neues Verzeichnis im aktuellen Ordner. Der Name steht für 'make directory' und wird direkt als Ordnername verwendet."
+},
+{
+  "question": "Welcher Befehl leert die PowerShell-Konsole, ohne Inhalte zu löschen?",
+  "type": "mc",
+  "options": [
+    "cls",
+    "clr",
+    "del",
+    "clean"
+  ],
+  "answer": "cls",
+  "explanation": "cls (oder Clear-Host) leert nur die Anzeige der Konsole. Befehlsverlauf und Daten bleiben im Hintergrund erhalten."
+},
+{
+  "question": "Welcher Befehl erstellt in PowerShell eine neue Datei?",
+  "type": "mc",
+  "options": [
+    "New-Item test.txt",
+    "Create-Item test.txt",
+    "Make-File test.txt",
+    "Add-Item test.txt"
+  ],
+  "answer": "New-Item test.txt",
+  "explanation": "New-Item erzeugt Dateien oder Ordner. Ohne Zusatz wird hier eine neue leere Datei mit dem angegebenen Namen erstellt."
+},
+{
+  "question": "Was bewirkt der Parameter -Recurse bei Copy-Item?",
+  "type": "mc",
+  "options": [
+    "Kopiert auch Unterordner und Inhalte",
+    "Löscht nach dem Kopieren die Quelle",
+    "Kopiert nur leere Ordner",
+    "Erstellt nur eine Verknüpfung"
+  ],
+  "answer": "Kopiert auch Unterordner und Inhalte",
+  "explanation": "-Recurse sorgt dafür, dass nicht nur der Hauptordner, sondern auch alle enthaltenen Unterordner und Dateien mitkopiert werden."
+},
+{
+  "question": "Welcher Befehl verschiebt eine Datei in einen anderen Ordner?",
+  "type": "mc",
+  "options": [
+    "Move-Item test.txt C:\\Backup",
+    "Copy-Item test.txt C:\\Backup",
+    "Remove-Item test.txt C:\\Backup",
+    "New-Item test.txt C:\\Backup"
+  ],
+  "answer": "Move-Item test.txt C:\\Backup",
+  "explanation": "Move-Item verschiebt Dateien oder Ordner an einen neuen Speicherort, ähnlich wie Ausschneiden und Einfügen im Explorer."
+},
+{
+  "question": "Welcher Befehl löscht Dateien oder Ordner in PowerShell direkt?",
+  "type": "mc",
+  "options": [
+    "Remove-Item test.txt",
+    "Delete-Item test.txt",
+    "Clear-Item test.txt",
+    "Drop-Item test.txt"
+  ],
+  "answer": "Remove-Item test.txt",
+  "explanation": "Remove-Item löscht Dateien oder Ordner sofort. Oft erfolgt keine Verschiebung in den Papierkorb, daher ist Vorsicht nötig."
+},
+{
+  "question": "Welcher PowerShell-Befehl benennt eine Datei oder einen Ordner um?",
+  "type": "mc",
+  "options": [
+    "Rename-Item",
+    "Move-Item",
+    "Set-Item",
+    "Copy-Item"
+  ],
+  "answer": "Rename-Item",
+  "explanation": "Rename-Item ändert nur den Namen einer Datei oder eines Ordners. Inhalt und Speicherort bleiben dabei unverändert."
+},
+{
+  "question": "Welcher Befehl zeigt den Inhalt einer Textdatei in der PowerShell an?",
+  "type": "mc",
+  "options": [
+    "Get-Content",
+    "Set-Content",
+    "Add-Content",
+    "Show-Content"
+  ],
+  "answer": "Get-Content",
+  "explanation": "Get-Content liest den Inhalt einer Datei aus und zeigt ihn direkt in der Konsole an, z. B. für Logs oder Konfigurationen."
+},
+{
+  "question": "Welcher Befehl überschreibt den Inhalt einer Datei vollständig?",
+  "type": "mc",
+  "options": [
+    "Set-Content",
+    "Add-Content",
+    "Get-Content",
+    "Write-Content"
+  ],
+  "answer": "Set-Content",
+  "explanation": "Set-Content schreibt neuen Inhalt in eine Datei und ersetzt dabei den gesamten bisherigen Inhalt vollständig."
+},
+{
+  "question": "Was bewirkt Add-Content in PowerShell?",
+  "type": "mc",
+  "options": [
+    "Fügt neuen Inhalt an eine Datei an",
+    "Löscht den Inhalt einer Datei",
+    "Überschreibt die gesamte Datei",
+    "Erstellt eine neue leere Datei"
+  ],
+  "answer": "Fügt neuen Inhalt an eine Datei an",
+  "explanation": "Add-Content ergänzt eine Datei um neuen Text, ohne den bestehenden Inhalt zu löschen. Ideal für Logs und Protokolle."
+},
+{
+  "question": "Welcher Befehl zeigt Hilfeinformationen zu PowerShell-Kommandos an?",
+  "type": "mc",
+  "options": [
+    "Get-Help",
+    "Get-Command",
+    "Show-Help",
+    "Info-Command"
+  ],
+  "answer": "Get-Help",
+  "explanation": "Get-Help liefert Beschreibungen, Parameter und Beispiele zu Befehlen. Mit -Examples werden nur Beispiele angezeigt."
+},
+{
+  "question": "Welcher Befehl listet alle verfügbaren PowerShell-Befehle auf?",
+  "type": "mc",
+  "options": [
+    "Get-Command",
+    "Get-Help",
+    "Show-Command",
+    "List-Command"
+  ],
+  "answer": "Get-Command",
+  "explanation": "Get-Command zeigt alle verfügbaren Befehle an. Mit Filtern wie *process* kann gezielt gesucht werden."
+},
+{
+  "question": "Welcher PowerShell-Befehl zeigt Eigenschaften und Methoden eines Objekts an?",
+  "type": "mc",
+  "options": [
+    "Get-Member",
+    "Get-Object",
+    "Show-Member",
+    "Get-Property"
+  ],
+  "answer": "Get-Member",
+  "explanation": "Get-Member zeigt alle Eigenschaften und Methoden eines Objekts. So erkennt man, welche Daten und Funktionen ein PowerShell-Objekt besitzt."
+},
+{
+  "question": "Was zeigt der Befehl Get-History in PowerShell an?",
+  "type": "mc",
+  "options": [
+    "Zuletzt ausgeführte Befehle",
+    "Alle laufenden Prozesse",
+    "Aktuelle Systemdienste",
+    "Dateiinhalte im Ordner"
+  ],
+  "answer": "Zuletzt ausgeführte Befehle",
+  "explanation": "Get-History listet alle zuvor eingegebenen Befehle auf. Das hilft beim Wiederholen oder Analysieren von Eingaben."
+},
+{
+  "question": "Welcher Befehl zeigt alle aktuell laufenden Prozesse an?",
+  "type": "mc",
+  "options": [
+    "Get-Process",
+    "Get-Service",
+    "Show-Process",
+    "List-Task"
+  ],
+  "answer": "Get-Process",
+  "explanation": "Get-Process zeigt laufende Programme inklusive CPU- und Speicherverbrauch sowie Prozess-ID, ähnlich dem Task-Manager."
+},
+{
+  "question": "Wie kann ein Prozess in PowerShell beendet werden?",
+  "type": "mc",
+  "options": [
+    "Stop-Process",
+    "End-Process",
+    "Kill-Task",
+    "Remove-Process"
+  ],
+  "answer": "Stop-Process",
+  "explanation": "Stop-Process beendet laufende Programme entweder über Namen oder Prozess-ID und wird oft bei eingefrorenen Anwendungen genutzt."
+},
+{
+  "question": "Was zeigt Get-Service in PowerShell an?",
+  "type": "mc",
+  "options": [
+    "Windows-Dienste und deren Status",
+    "Alle laufenden Programme",
+    "Dateien im aktuellen Ordner",
+    "Systemhardware im Detail"
+  ],
+  "answer": "Windows-Dienste und deren Status",
+  "explanation": "Get-Service listet Hintergrunddienste wie Update- oder Druckdienste inklusive Status und Startverhalten auf."
+},
+{
+  "question": "Welche Informationen liefert Get-ComputerInfo?",
+  "type": "mc",
+  "options": [
+    "Umfangreiche System- und Hardwaredaten",
+    "Nur installierte Programme",
+    "Nur aktuelle Benutzerprozesse",
+    "Nur Netzwerkverbindungen"
+  ],
+  "answer": "Umfangreiche System- und Hardwaredaten",
+  "explanation": "Get-ComputerInfo zeigt detaillierte Systemdaten wie Windows-Version, RAM, CPU und BIOS-Informationen zur Diagnose und Verwaltung."
+},
+{
+  "question": "Welcher PowerShell-Befehl startet den Computer neu?",
+  "type": "mc",
+  "options": [
+    "Restart-Computer",
+    "Stop-Computer",
+    "Start-Computer",
+    "Reboot-System"
+  ],
+  "answer": "Restart-Computer",
+  "explanation": "Restart-Computer führt einen Neustart des Systems aus und wird oft in Administration und Automatisierung verwendet."
+},
+{
+  "question": "Welcher Befehl führt einen einfachen Netzwerk-Ping-Test durch?",
+  "type": "mc",
+  "options": [
+    "Test-Connection",
+    "Get-Connection",
+    "Ping-Host",
+    "Check-Network"
+  ],
+  "answer": "Test-Connection",
+  "explanation": "Test-Connection prüft, ob ein Ziel erreichbar ist und liefert Antwortzeiten, ähnlich wie ein Ping."
+},
+{
+  "question": "Welcher Befehl zeigt grundlegende Netzwerkinformationen wie IP-Adresse an?",
+  "type": "mc",
+  "options": [
+    "ipconfig",
+    "Get-NetIP",
+    "Show-IPConfig",
+    "Net-Info"
+  ],
+  "answer": "ipconfig",
+  "explanation": "ipconfig zeigt IP-Adresse, Gateway und Netzwerkadapter an. Mit /all erhält man detaillierte Zusatzinformationen."
+},
+{
+  "question": "Welcher PowerShell-Befehl zeigt moderne IP-Adressinformationen an?",
+  "type": "mc",
+  "options": [
+    "Get-NetIPAddress",
+    "Get-IPConfig",
+    "Show-NetIP",
+    "Resolve-IP"
+  ],
+  "answer": "Get-NetIPAddress",
+  "explanation": "Get-NetIPAddress liefert detaillierte und moderne IP-Informationen und ist eine Erweiterung gegenüber ipconfig."
+},
+{
+  "question": "Welcher Befehl löst eine Domain in eine IP-Adresse auf?",
+  "type": "mc",
+  "options": [
+    "Resolve-DnsName",
+    "Get-DnsName",
+    "Find-IP",
+    "Check-DNS"
+  ],
+  "answer": "Resolve-DnsName",
+  "explanation": "Resolve-DnsName zeigt DNS-Einträge und die zugehörige IP-Adresse einer Domain und ist wichtig für Netzwerkdiagnosen."
+},
+{
+  "question": "Welcher Befehl zeigt lokale Benutzerkonten an?",
+  "type": "mc",
+  "options": [
+    "Get-LocalUser",
+    "Get-UserList",
+    "Show-Users",
+    "List-LocalAccounts"
+  ],
+  "answer": "Get-LocalUser",
+  "explanation": "Get-LocalUser listet alle lokalen Benutzerkonten auf und wird für Verwaltung und Sicherheitsprüfungen genutzt."
+},
+{
+  "question": "Welcher Befehl zeigt die aktuelle PowerShell-Skriptausführungsrichtlinie an?",
+  "type": "mc",
+  "options": [
+    "Get-ExecutionPolicy",
+    "Set-ExecutionPolicy",
+    "Get-PolicyExecution",
+    "Show-ExecutionPolicy"
+  ],
+  "answer": "Get-ExecutionPolicy",
+  "explanation": "Get-ExecutionPolicy zeigt die aktuelle Sicherheitsrichtlinie, die festlegt, ob und welche Skripte ausgeführt werden dürfen."
+},
+{
+  "question": "Welcher PowerShell-Befehl ändert die Skriptausführungsrichtlinie?",
+  "type": "mc",
+  "options": [
+    "Set-ExecutionPolicy",
+    "Get-ExecutionPolicy",
+    "Change-ExecutionPolicy",
+    "Update-ExecutionPolicy"
+  ],
+  "answer": "Set-ExecutionPolicy",
+  "explanation": "Set-ExecutionPolicy passt die Sicherheitsrichtlinie an, z. B. RemoteSigned, um die Ausführung von Skripten zu steuern."
+},
+{
+  "question": "Welcher Wert erlaubt die Ausführung lokaler Skripte, blockiert aber unsignierte entfernte Skripte?",
+  "type": "mc",
+  "options": [
+    "RemoteSigned",
+    "Unrestricted",
+    "Restricted",
+    "AllSigned"
+  ],
+  "answer": "RemoteSigned",
+  "explanation": "RemoteSigned erlaubt lokale Skripte, verlangt aber eine Signatur für Skripte aus dem Internet und bietet so ein mittleres Sicherheitsniveau."
+},
+{
+  "question": "Welchem Schema folgt der typische Aufbau von PowerShell-Befehlen?",
+  "type": "mc",
+  "options": [
+    "Verb-Nomen",
+    "Nomen-Verb",
+    "Aktion-Objekt",
+    "Befehl-Parameter"
+  ],
+  "answer": "Verb-Nomen",
+  "explanation": "PowerShell-Befehle bestehen meist aus einem Verb und einem Nomen, z. B. Get-Process oder Remove-Item, was sie gut lesbar macht."
+}
+]
